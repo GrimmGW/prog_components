@@ -11,7 +11,6 @@ class Listview2Screen extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(
         title: Text("ListView2"),
-        backgroundColor: Colors.amberAccent,
       ),
       body: ListView.separated(
         itemCount: juegos.length,
