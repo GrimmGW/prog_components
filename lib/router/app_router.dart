@@ -6,6 +6,7 @@ class AppRouter{
 
   static const initialRoute = '/home';
 
+  //!parte en desuso desde acá
   static Map<String, Widget Function(BuildContext)> routes = {
 
     '/listview1' : ( BuildContext context ) => const ListviewScreen(),
@@ -15,6 +16,7 @@ class AppRouter{
     '/alert'     : ( BuildContext context ) => const AlertScreen()
 
   };
+  //hasta acá.
 
   static final menuOptions = <MenuOption>[
     MenuOption(route: '/home', icon: Icons.home_filled, name: 'Home Screen', screen: const HomeScreen()),
