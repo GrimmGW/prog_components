@@ -23,7 +23,23 @@ class CustomCard extends StatelessWidget {
             leading: Icon(Icons.gamepad_rounded),
             title: Text(titulo, style: TextStyle(fontWeight: FontWeight.bold),),
             subtitle: Text(subtitulo),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: (){}, 
+                  child: Text("Aceptar")
+                ),
+                 TextButton(
+                  onPressed: (){}, 
+                  child: Text("Cancelar")
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

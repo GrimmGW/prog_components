@@ -20,17 +20,24 @@ class CardScreen extends StatelessWidget {
             subtitulo: "Es una videojuego que fue lanzado en la NES.", 
             color: Colors.deepPurple[100],
           ),
-          CustomCard(
-            titulo: "Wii Sports", 
-            subtitulo: "Es una videojuego que fue lanzado en la Nintendo Wii.", 
-            color: Colors.cyan[100],
+        
+          SizedBox(height: 20),
+          CustomCard2(
+            imageUrl: 'https://d36tnp772eyphs.cloudfront.net/blogs/1/2015/04/Mount-Taranaki-volcano-in-New-Zealand.jpg', 
+            name: 'Una hermosa vista a Nueva Zelanda',
           ),
-          CustomCard(
-            titulo: "Mario Party 8", 
-            subtitulo: "Es una videojuego que fue lanzado en la Nintendo Wii.", 
-            color: Colors.redAccent[100],
+          SizedBox(height: 20),
+          CustomCard2(
+            imageUrl: 'https://www.aaronreedphotography.com/images/xl/The-Wash-Web-2019.jpg', 
+            name: 'a',
           ),
-          
+          SizedBox(height: 20),
+          CustomCard2(
+            imageUrl: 'https://www.explore.com/img/gallery/the-50-most-incredible-landscapes-in-the-whole-entire-world/l-intro-1672072042.jpg', 
+            name: ''
+          ),
+          SizedBox(height: 200)
+
         ],
       )
     );

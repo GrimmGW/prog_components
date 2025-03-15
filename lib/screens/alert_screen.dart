@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prog_components/Widgets/widgets.dart';
 
 class AlertScreen extends StatelessWidget {
    
@@ -11,15 +10,7 @@ class AlertScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Alert Screen"),
       ),
-      body: Column(
-        children: [
-          CustomCard(
-            titulo: 'Hola mundo', 
-            subtitulo: '', 
-            color: Colors.greenAccent[100]
-          ),
-        ],
-      )
+      body: Container()
     );
   }
 }
