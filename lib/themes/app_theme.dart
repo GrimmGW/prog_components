@@ -3,20 +3,22 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
 
+  static final Color? primary = Colors.deepPurpleAccent;
+
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
 
-    primaryColor: Colors.deepPurpleAccent,
+    primaryColor: primary,
 
     //Tema del AppBar
     appBarTheme: AppBarTheme(
-      backgroundColor: Colors.deepPurpleAccent,
+      backgroundColor: primary,
       centerTitle: true,
     ),
 
     //Tema del FloatingActionButton
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       elevation: 0,
-      backgroundColor: Colors.deepPurpleAccent,
+      backgroundColor: primary,
       iconSize: 20,
     ),
 
@@ -26,11 +28,11 @@ class AppTheme {
 
     static final ThemeData lightTheme = ThemeData.light().copyWith(
 
-    primaryColor: Colors.deepPurpleAccent,
+    primaryColor: primary,
 
     //Tema del AppBar
     appBarTheme: AppBarTheme(
-      backgroundColor: Colors.deepPurpleAccent,
+      backgroundColor: primary,
       centerTitle: true,
     ),
 
@@ -38,8 +40,15 @@ class AppTheme {
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       elevation: 0,
       foregroundColor: Colors.white ,
-      backgroundColor: Colors.deepPurpleAccent,
+      backgroundColor: primary,
       iconSize: 20,
+    ),
+
+    textButtonTheme: TextButtonThemeData(
+      style: ButtonStyle(
+        backgroundColor: WidgetStateProperty.all(Colors.purple[50]),
+        foregroundColor: WidgetStateProperty.all(Colors.deepPurpleAccent[700])
+      )
     )
 
   );

@@ -115,6 +115,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.12.17"
+  material_bottom_nav_bar:
+    dependency: "direct main"
+    description:
+      name: material_bottom_nav_bar
+      sha256: "02db75685378874de890f24832f9fc41f7665557c549cb8e2727ae150a4f2e42"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.2"
   material_color_utilities:
     dependency: transitive
     description:

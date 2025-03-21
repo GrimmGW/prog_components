@@ -5,17 +5,6 @@ import '../screens/screens.dart';
 class AppRouter{
 
   static const initialRoute = '/home';
-
-  //!parte en desuso desde acá
-  static Map<String, Widget Function(BuildContext)> routes = {
-
-    '/listview1' : ( BuildContext context ) => const ListviewScreen(),
-    '/listview2' : ( BuildContext context ) => const Listview2Screen(),
-    '/home'      : ( BuildContext context ) => const HomeScreen(),
-    '/card'      : ( BuildContext context ) => const CardScreen(),
-    '/alert'     : ( BuildContext context ) => const AlertScreen()
-
-  };
   //hasta acá.
 
   static final menuOptions = <MenuOption>[
@@ -24,6 +13,8 @@ class AppRouter{
     MenuOption(route: '/alert', icon: Icons.add_alert, name: 'Alert Screen', screen: const AlertScreen()),
     MenuOption(route: '/listview1', icon: Icons.list, name: 'Listview1 Screen', screen: const ListviewScreen()),
     MenuOption(route: '/listview2', icon: Icons.home_filled, name: 'Listview2 Screen', screen: const Listview2Screen()),
+    MenuOption(route: '/avatar', icon: Icons.supervised_user_circle, name: 'Avatar Screen', screen: const AvatarScreen()),
+    MenuOption(route: '/dependencies', icon: Icons.star_rate_rounded, name: 'Dependencies Screen', screen: const DependenciesScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
